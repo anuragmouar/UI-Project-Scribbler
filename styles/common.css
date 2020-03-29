@@ -1,0 +1,10 @@
+#main-hdr {
+    font-family: 'Montez', cursive;
+    color: blue;
+}
+#sub-hdr {
+    font-family: 'Ubuntu Mono';
+}
+#btn {
+    float: right;
+}

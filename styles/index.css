@@ -1,0 +1,15 @@
+html {
+    height: 100%;
+}
+#main-page {
+    background-image: url(../images/background.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#container-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
