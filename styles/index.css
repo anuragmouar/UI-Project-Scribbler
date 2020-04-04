@@ -13,3 +13,9 @@ html {
     top: 50%;
     left: 50%;
 }
+.modal{
+    padding-top: 100px;
+}
+#signup{
+    background-color: green;
+}

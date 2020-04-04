@@ -16,6 +16,8 @@
 
     <link href="./styles/common.css" rel="stylesheet">
     <link href="./styles/index.css" rel="stylesheet">
+
+    <script src="./scripts/index.js"></script>
 </head>
 
 <body id="main-page">
@@ -23,7 +25,7 @@
     <header id="hdr">
         <div id="common-hdr">
             <div id="btn">
-                <button id="signup-btn" class="btn btn-primary">Sign Up</button>
+                <button id="signup-btn" class="btn btn-primary" onclick="loadSignUpModal()">Sign Up</button>
                 <button id="sigin-btn" class="btn btn-primary">Sign In</button>
             </div>
             <h2 id="main-hdr">ScriBBler</h2>
@@ -34,6 +36,45 @@
         <button id="allpost-btn" class="btn btn-warning">All Posts</button>
         <button id="createpost-btn" class="btn btn-warning">Create Post</button>
     </div>
+    <!-- Sign up modal division -->
+    <div id="signupModal" class="modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <h3>Get Started</h3>
+                    <button id="signupClose" class="close" onclick="closeSignupModal()">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name"> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" placeholder="Enter your username"> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="text" class="form-control" id="password" placeholder="Enter your password"> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmpassword">Confirm Password</label>
+                        <input type="text" class="form-control" id="confirmpassword" placeholder="Re-enter your password"> 
+                    </div>
+
+                    <button class="btn btn-primary btn-block" id="signup">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
