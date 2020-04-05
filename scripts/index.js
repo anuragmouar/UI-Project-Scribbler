@@ -1,6 +1,16 @@
-function loadSignUpModal(){
+function loadSignUpModal() {
+    document.getElementById("signinModal").style.display = "none";
     document.getElementById("signupModal").style.display = "block";
 }
 function closeSignupModal() {
-    signupModal.style.display = "none";
+    document.getElementById("signupModal").style.display = "none";
+}
+function loadSignInModal() {
+    document.getElementById("signinModal").style.display = "block";
+}
+function closeSigninModal() {
+    document.getElementById("signinModal").style.display = "none";
+}
+function redirectToAllPost() {
+    
 }
