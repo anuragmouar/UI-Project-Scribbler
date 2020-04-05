@@ -8,3 +8,6 @@
 #btn {
     float: right;
 }
+#signup,#signin{
+    background-color: green;
+}
