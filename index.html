@@ -33,13 +33,13 @@
         </div>
     </header>
     <div id="container-btn">
-        <button id="allpost-btn" class="btn btn-warning" onclick="redirectToAllPost()">All Posts</button>
-        <button id="createpost-btn" class="btn btn-warning">Create Post</button>
+        <button id="allpost-btn" class="btn btn-warning" onclick="window.location='./html/postlist.html'">All Posts</button>
+        <button id="createpost-btn" class="btn btn-warning" onclick="loadCreatePostModal()">Create Post</button>
     </div>
     <!-- Sign up modal division -->
     
         <div id="signupModal" class="modal">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     
                     <div class="modal-header">
@@ -80,7 +80,7 @@
 
     <!-- Sign in modal division -->
         <div id="signinModal" class="modal">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     
                     <div class="modal-header">
@@ -109,6 +109,39 @@
                         <div class="d-flex justify-content-center links">
                             Not a member?&nbsp;<a href="#" onclick="loadSignUpModal()">Sign Up</a>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- create post modal division -->
+        <div id="createpostModal" class="modal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        <h3>Pen Your Post</h3>
+                        <button id="createpostClose" class="close" onclick="closeCreatepostModal()">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <form>  
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input type="text" class="form-control" id="title" placeholder="Enter title of your post" required> 
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contents">Contents</label>
+                                <textarea class="form-control" id="contents" rows="10" placeholder="Enter the contents of your post"></textarea>
+                            </div>
+
+                            <div class="btn-group" id="createbtn">
+                                <button id="createpost">Create</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

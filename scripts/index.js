@@ -11,6 +11,9 @@ function loadSignInModal() {
 function closeSigninModal() {
     document.getElementById("signinModal").style.display = "none";
 }
-function redirectToAllPost() {
-    
+function loadCreatePostModal() {
+    document.getElementById("createpostModal").style.display = "block";
+}
+function closeCreatepostModal() {
+    document.getElementById("createpostModal").style.display = "none";
 }
